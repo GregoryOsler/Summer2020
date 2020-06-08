@@ -40,11 +40,8 @@ public class Challenge_2 {
         }
     }
 }
-//    public static void Bottom(){
-//        System.out.println("| \\\\\\*/// |");
-//        System.out.println("|  \\\\*//  |");
-//        System.out.println("|   \\*/   |");
-//        System.out.println("|    *    |");
+    public static void Bottom(){
+
 //    }
 
 
