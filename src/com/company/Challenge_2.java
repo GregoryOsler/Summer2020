@@ -7,11 +7,11 @@ public class Challenge_2 {
 
     public static void main(String[] args) {
         Line();
-//        Bottom();
+        Bottom();
         Top();
-//        Bottom();
+        Bottom();
         Line();
-//        Bottom();
+        Bottom();
         Top();
         Line();
     }
@@ -39,9 +39,23 @@ public class Challenge_2 {
             System.out.println("|");
         }
     }
-}
-    public static void Bottom(){
 
-//    }
+    public static void Bottom() {
+        for (int line = 1; line < SIZE - 1; line++) {
+            System.out.print("|");
+            for (int space = 1; space <= -1 * line + SIZE - 1; space++) {
+                System.out.print(" ");
+            }
+            for (int slash = 1; slash <= 1 * line - 1; slash++) {
+                System.out.print("\\");
+            }
+            System.out.print("*");
+            for (int slash = 1; slash <= 1 * line - 1; slash++) {
+                System.out.print("/");
+            }
+            System.out.println("|");
+        }
+    }
+}
 
 
