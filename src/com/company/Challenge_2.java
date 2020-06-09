@@ -7,7 +7,6 @@ public class Challenge_2 {
 
     public static void main(String[] args) {
         Line();
-        Bottom();
         Top();
         Bottom();
         Line();
@@ -21,7 +20,7 @@ public class Challenge_2 {
         for (int dash = 0; dash < 2 * SIZE + 1; dash++) {
             System.out.print("-");
         }
-        System.out.print("+");
+        System.out.println("+");
     }
 
     public static void Top() {
@@ -33,25 +32,32 @@ public class Challenge_2 {
             for (int slash = 1; slash <= 1 * line - 1; slash++) {
                 System.out.print("/");
             }
+            System.out.print("*");
             for (int slash = 1; slash <= 1 * line - 1; slash++) {
                 System.out.print("\\");
+            }
+            for (int space = 1; space <= -1 * line + SIZE + 1; space++) {
+                System.out.print(" ");
             }
             System.out.println("|");
         }
     }
 
     public static void Bottom() {
-        for (int line = 1; line < SIZE - 1; line++) {
+        for (int line = 1; line < SIZE + 1; line++) {
             System.out.print("|");
-            for (int space = 1; space <= -1 * line + SIZE - 1; space++) {
+            for (int space = 1; space <= line; space++) {
                 System.out.print(" ");
             }
-            for (int slash = 1; slash <= 1 * line - 1; slash++) {
+            for (int slash = 1; slash <= -1 * line + SIZE; slash++) {
                 System.out.print("\\");
             }
             System.out.print("*");
-            for (int slash = 1; slash <= 1 * line - 1; slash++) {
+            for (int slash = 1; slash <= -1 * line+ SIZE; slash++) {
                 System.out.print("/");
+            }
+            for (int space = 1; space <= line; space++) {
+                System.out.print(" ");
             }
             System.out.println("|");
         }
