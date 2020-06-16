@@ -12,11 +12,10 @@ public class GangstaName {
         System.out.print("Type your name here: ");
         String name = console.nextLine();
         int indexOf= name.indexOf(" ");
-        System.out.println(indexOf);
         String first= name.substring(0, indexOf);
 String last= name.substring(name.indexOf(" ")+1);
 last= last.toUpperCase();
 char fInitial= first.charAt(0);
-System.out.println("your gangsta name is\"" + fInitial+ ". Diddy"+ last+ " "+ first+ "-izzle\"");
+System.out.println("your gangsta name is\"" + fInitial+ ". Diddy "+ last+ " "+ first+ "-izzle\"");
 }
 }
