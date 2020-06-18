@@ -7,7 +7,6 @@ package com.company;
 //solve the sum of the 3 together
 //add a method to get tip percent and total cost
 
-
 import java.util.Scanner;
 
 public class OperatorChallenge {
