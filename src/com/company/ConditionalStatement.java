@@ -5,11 +5,15 @@ package com.company;
 import java.util.Scanner;
 
 //Pseudocode:
-//Declare the int as any number
+//Declare Scanner
+//put in a "do you want to play the game to initialize the game
+//do an if person types yes, go through the game
+//if no say goodbye
 //if the int is odd print Weird, if even print Not Weird
 //if the int is even and in the range of 6-20 put weird
 //if the int is greater than 20 put Not Weird
-//^^^ all if else statements
+//Create a loop in that the game keeps running until you say no
+
 public class ConditionalStatement {
     public static void main(String[] args) {
 //        int int1=

@@ -1,7 +1,24 @@
 package com.company;
 import java.util.Scanner;
-//firstWord = Peter
-//phrase= and his friend
+
+//Make a string for “Peter and his friend”
+//If there is a way to count using the number of letters (maybe using int?) include that
+//Do a for loop using the int ^^^ if possible for(int…) in which i=0 or something along those lines
+//Use a scanner to scan if the characters are letters: if so, count them
+//Then have System.out.println and show how many letters
+//
+//Find the first space: StringObject.indexOf()        declare an int variable
+//Get first word: StringObject.substring(0,5)
+//Int len= firstWord.length
+//To control for loop: (firstWorld.length())
+//Declare a char so I can take the word at the index of my loop
+//Index=firstWord.substring(loop index +1).indexOf(letter);
+//letter= firstWorld.charAt       index of loop
+//While (index<0){
+//Count++
+//}
+//Print letter and count
+//count=0
 public class PeterAndHisFriend {
     public static int indexOf;
     public static String firstword;
