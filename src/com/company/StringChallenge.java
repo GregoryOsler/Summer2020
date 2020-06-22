@@ -16,11 +16,13 @@ import java.util.*;
 public class StringChallenge {
     public static char letter;
     public static void main(String[] args) {
+//        declaring variables and scanner
         Scanner input = new Scanner(System.in);
         int count;
         String s= "";
         String inputWord;
         do {
+//            this is where the program will know how many times to repeat the word splitter
             System.out.println("How many words will you print(2 to 10)?");
             count = input.nextInt();
         } while (count < 2 || count > 10);
@@ -30,12 +32,13 @@ public class StringChallenge {
                 System.out.println("Please print your word: ");
                 inputWord = input.next();
             } while (inputWord.length() < 2 || inputWord.length() > 10000);
-
+//this is where the even and odd letters get split up
             String newEven = even(inputWord);
             String newOdd = odd(inputWord);
             System.out.println(newEven+ " "+ newOdd);
         }
     }
+//    creating method for even letters
     public static String even(String s) {
         String newEvenWord= "";
         for (int index = 0; index < s.length(); index += 2) {
@@ -44,7 +47,7 @@ public class StringChallenge {
         }
         return newEvenWord;
     }
-
+//      creating method for odd letters
         public static String odd (String s) {
             String newOddWord= "";
             for (int index = 1; index < s.length(); index += 2) {
